@@ -1,5 +1,6 @@
 package co.com.choucair.retoTecnico.stepdefinitions;
 
+import co.com.choucair.retoTecnico.tasks.Login;
 import co.com.choucair.retoTecnico.tasks.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -17,7 +18,7 @@ public class AutomationPracticeStepDefinitions {
 
     @Given("^tan Brandon wants to learn automation at the academy Choucair$")
     public void tanBrandonWantsToLearnAutomationAtTheAcademyChoucair() {
-        OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.thePage());
+        OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.thePage(), Login.onthePage());
 
     }
 
